@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isDev = process.env.NODE_ENV === 'development'
 console.log(`当前环境变量是${process.env.NODE_ENV}`)
+console.log(require('./build/postcss.config.js'))
 module.exports = {
   entry: {
     app: './src/index.js',
@@ -31,7 +32,15 @@ module.exports = {
         test: /\.css$/,
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.resolve(__dirname, './build/postcss.config.js')
+              }
+            }
+          }
         ]
       },
       {

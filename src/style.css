@@ -6,6 +6,7 @@
 }
 
 .hello {
+  width: 750px;
   color: red;
   font-size: 100px;
   font-family: '04B';
