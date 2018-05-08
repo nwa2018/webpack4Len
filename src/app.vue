@@ -15,4 +15,8 @@ export default {
 .txt
   width 750px
   color green
+  font-size 30px
+  transform translateX(30px)
+.test
+  background: url('./n.png')
 </style>

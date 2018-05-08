@@ -1,18 +1,13 @@
-import { join } from 'lodash-es'
-import 'jquery'
+// import { join } from 'lodash-es'
 import { printMe } from './print.js';
 import '~@/style.css';
 import util from '~@/util'
-import App from './app.vue'
-import Vue from 'vue'
+// import App from './app.vue'
+// import Vue from 'vue'
 
-const div = document.createElement('div')
-div.id = 'app'
-document.body.appendChild(div)
-
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
-
-module.hot && module.hot.accept()
+// new Vue({
+//   el: '#app',
+//   render: h => h(App)
+// })
+printMe()
+// module.hot && module.hot.accept()

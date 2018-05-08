@@ -11,8 +11,7 @@ console.log(`当前环境变量是${process.env.NODE_ENV}`)
 
 module.exports = {
   entry: {
-    app: './src/index.js',
-    test: './src/test.js'
+    index: './src/index.js'
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
@@ -128,7 +127,27 @@ module.exports = {
               fallback: 'file-loader'
             }
           }
-        ]
+        ].concat(isDev ? [] : [
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              pngquant: {
+                speed: 4,
+                quality: '75-90'
+              },
+              optipng: {
+                optimizationLevel: 7
+              },
+              mozjpeg: {
+                quality: 70,
+                progressive: true
+              },
+              gifsicle: {
+                interlaced: false
+              }
+            }
+          }
+        ])
       }
     ]
   }

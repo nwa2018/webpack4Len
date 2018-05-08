@@ -36,3 +36,6 @@ html模板使用art-template-loader
 
 
 vue css module https://vue-loader.vuejs.org/guide/css-modules.html
+
+
+差eslint, 种子文件， react支持， 代码目录规划， 脚手架整合  postcss
