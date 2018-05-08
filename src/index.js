@@ -1,13 +1,14 @@
-// import { join } from 'lodash-es'
+import { join } from 'lodash-es'
 import { printMe } from './print.js';
-import '~@/style.css';
+// import '~@/style.css';
 import util from '~@/util'
-// import App from './app.vue'
-// import Vue from 'vue'
+import App from './app.vue'
+import Vue from 'vue'
 
-// new Vue({
-//   el: '#app',
-//   render: h => h(App)
-// })
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
+console.log(join(['1', '2'], ' '))
 printMe()
-// module.hot && module.hot.accept()
+module.hot && module.hot.accept()

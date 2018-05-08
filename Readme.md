@@ -39,3 +39,14 @@ vue css module https://vue-loader.vuejs.org/guide/css-modules.html
 
 
 差eslint, 种子文件， react支持， 代码目录规划， 脚手架整合  postcss
+
+
+  "presets": [
+    [
+      "env",
+      {
+        modules: false
+      }
+    ]
+  ],
+  让babel支持tree shaking

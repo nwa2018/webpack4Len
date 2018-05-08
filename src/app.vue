@@ -11,12 +11,13 @@ export default {
   }
 }
 </script>
-<style lang='stylus' scoped>
+<style lang='stylus'>
 .txt
   width 750px
-  color green
+  color red
   font-size 30px
   transform translateX(30px)
 .test
   background: url('./n.png')
+
 </style>
