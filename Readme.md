@@ -30,3 +30,6 @@ preloaded与prefetch的区别, 按照文档实战prefetch并没有生效，还�
 
 
 缓存遗留问题，css改动后，会影响引入其的js的hash戳
+
+html模板使用art-template-loader
+文档：https://aui.github.io/art-template/docs/

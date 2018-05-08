@@ -9,6 +9,8 @@
     "*.css"
   ],
   "dependencies": {
+    "art-template": "^4.12.2",
+    "art-template-loader": "^1.4.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-runtime": "^1.0.7",
     "babel-plugin-transform-runtime": "^6.23.0",
