@@ -1,0 +1,13 @@
+@font-face {
+  font-family: '04B';
+  src:  url('./04B.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hello {
+  color: red;
+  font-size: 100px;
+  font-family: '04B';
+  background: url('./m.png');
+}
