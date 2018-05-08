@@ -5,9 +5,6 @@
   "repository": "git@github.com:nwa2018/webpack4Len.git",
   "author": "fujuewen <fujuewen@yy.com>",
   "license": "MIT",
-  "sideEffects": [
-    "*.css"
-  ],
   "dependencies": {
     "art-template": "^4.12.2",
     "art-template-loader": "^1.4.3",

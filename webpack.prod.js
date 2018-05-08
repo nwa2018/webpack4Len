@@ -5,7 +5,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const common = require('./webpack.common.js');
 
-const a = module.exports = merge.smart(common, {
+const a = module.exports = merge(common, {
   mode: 'production',
   plugins: [
     new MiniCssExtractPlugin({

@@ -23,6 +23,11 @@ lodash 如何支持tree shaking  https://medium.com/@martin_hotell/tree-shake-lo
 
 官方的代码构建输出分析工具：https://github.com/webpack/analyse
 
+vue的样式抽不出来是因为在package.json加了如下代码
+  "sideEffects": [
+    "*.css"
+  ],
+https://doc.webpack-china.org/guides/tree-shaking/  这里说让我加上上面那段代码避免在生产环境无意中将其删掉，加了反而会删掉vue里面的styl，这不是坑爹吗！！
 
 
 链接预取mdn文档：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Link_prefetching_FAQ
