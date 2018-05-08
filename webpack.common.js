@@ -2,10 +2,11 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
 console.log(`当前环境变量是${process.env.NODE_ENV}`)
-console.log(require('./build/postcss.config.js'))
+
 module.exports = {
   entry: {
     app: './src/index.js',
@@ -15,7 +16,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Output Management'
-    })
+    }),
+    new VueLoaderPlugin()
   ],
   output: {
     filename: isDev ? '[name].js' : '[name].[chunkhash:4].js',
@@ -40,6 +42,21 @@ module.exports = {
                 path: path.resolve(__dirname, './build/postcss.config.js')
               }
             }
+          }
+        ]
+      },
+      {
+        test: /\.vue$/,
+        use: [
+          'vue-loader'
+        ]
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader'
           }
         ]
       },
