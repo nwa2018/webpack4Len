@@ -94,6 +94,12 @@ module.exports = {
         ]
       },
       {
+        enforce: "pre",
+        test: /\.(jsx?|vue)$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader"
+      },
+      {
         test: /\.jsx?$/,
         // In order to ensure JS transpilation is applied to Vue SFCs in node_modules, you need to whitelist them by using an exclude function instead:
         exclude: file => (

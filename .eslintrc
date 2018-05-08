@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "standard",
+    'plugin:vue/essential'
+  ],
+  "rules": {
+    "no-unused-vars": 1,
+    "no-new": 1
+  }
+}

@@ -55,3 +55,10 @@ vue css module https://vue-loader.vuejs.org/guide/css-modules.html
     ]
   ],
   让babel支持tree shaking
+
+
+eslint 使用standard比较宽松
+https://github.com/standard/eslint-config-standard
+vue的eslint检查：https://github.com/vuejs/eslint-plugin-vue
+webpack要加eslint-loader
+standard官网介绍：https://standardjs.com/index.html#install，这个可以细看
