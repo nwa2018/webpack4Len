@@ -1,5 +1,5 @@
-<template>
-  <p class='txt'>{{text}}</p>
+<template lang='pug'>
+p.txt {{text}}
 </template>
 
 <script>
@@ -11,9 +11,8 @@ export default {
   }
 }
 </script>
-<style>
-.txt {
-  width: 750px;
-  color: green;
-}
+<style lang='stylus' scoped>
+.txt
+  width 750px
+  color green
 </style>

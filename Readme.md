@@ -33,3 +33,6 @@ preloaded与prefetch的区别, 按照文档实战prefetch并没有生效，还�
 
 html模板使用art-template-loader
 文档：https://aui.github.io/art-template/docs/
+
+
+vue css module https://vue-loader.vuejs.org/guide/css-modules.html
